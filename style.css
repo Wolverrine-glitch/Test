@@ -1,0 +1,68 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ffea;
+  background-color: #0b0b0b;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Header */
+header h1 {
+  font-size: 3rem;
+  color: #ff0040;
+  text-shadow: 0 0 10px #ff0040, 0 0 20px #00ffea;
+  animation: flicker 2s infinite;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #00ffea;
+  text-shadow: 0 0 5px #00ffea;
+  margin-bottom: 2rem;
+}
+
+/* Sections */
+section {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #00ffea;
+  border-radius: 10px;
+  animation: pulse 3s infinite;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 22%, 24%, 55% { opacity: 0.4; }
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 10px #00ffea; }
+  50% { box-shadow: 0 0 30px #00ffea; }
+}
