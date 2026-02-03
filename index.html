@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OBLIVION FOUNDATION NODE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BOOT SCREEN -->
+<div id="boot" class="screen active">
+<pre>
+OBLIVION FOUNDATION
+BIOSECURE TERMINAL NODE
+
+WARNING:
+• UNAUTHORIZED ACCESS PROHIBITED
+• NEURAL CONTAMINATION RISK
+• CALYX TRACE DETECTED
+• MEMORY INTEGRITY UNSTABLE
+
+THIS SYSTEM SHOULD NOT BE ONLINE
+</pre>
+<p class="blink">PRESS ANY KEY TO CONTINUE</p>
+</div>
+
+<!-- LOGIN SCREEN -->
+<div id="login" class="screen">
+  <h1>SECURE LOGIN</h1>
+
+  <label>USERNAME</label>
+  <input type="text" value="M.CALDER" disabled>
+
+  <label>PASSWORD</label>
+  <input type="password" id="password" placeholder="ENTER PASSPHRASE">
+
+  <button onclick="attemptLogin()">LOGIN</button>
+  <p id="loginMsg" class="error"></p>
+</div>
+
+<!-- MAIN MENU (HIDDEN UNTIL LOGIN) -->
+<div id="menu" class="screen">
+  <h2>RESEARCH NODE: EIDOLON-07</h2>
+
+  <div class="menu-option" onclick="openEmails()">EMAIL ARCHIVE</div>
+  <div class="menu-option locked">EXPERIMENT LOGS</div>
+  <div class="menu-option locked">SUBJECT DATABASE</div>
+  <div class="menu-option locked">ATMOSPHERIC MODELS</div>
+  <div class="menu-option locked">PHASE RESUMPTION CONTROLS</div>
+
+  <p class="warning">MULTIPLE MODULES INACCESSIBLE</p>
+
+  <!-- EMAIL ARCHIVE (HIDDEN UNTIL CLICKED) -->
+  <div id="emails" class="hidden">
+    <h3>EMAIL ARCHIVE</h3>
+
+    <div class="email">
+      <strong>RE: CALYX STABILITY</strong><br>
+      <span>BioTechnica Research</span>
+      <p>
+        CALYX integrates preferentially with cybernetic neural pathways.
+        Organic-only subjects degrade unpredictably.
+      </p>
+      <p>
+        Recommendation: atmospheric dispersion synchronized with SKYE ionization.
+      </p>
+    </div>
+
+    <div class="email">
+      <strong>Atmospheric Test Results</strong><br>
+      <span>Oblivion Oversight</span>
+      <p>
+        Phase Resumption caused behavioral regression.
+        Subjects remained mobile.
+      </p>
+      <p>
+        Identity loss confirmed within 4–6 minutes.
+      </p>
+    </div>
+
+    <div class="email">
+      <strong>Final Notice</strong><br>
+      <span>UNKNOWN</span>
+      <p>
+        They’re restarting EIDOLON.
+      </p>
+      <p>
+        SKYE was never containment.
+        It was distribution.
+      </p>
+      <p><em>If this node is active, containment has failed.</em></p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
