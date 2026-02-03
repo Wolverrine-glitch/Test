@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background: #050608;
+  color: #9efcfc;
+  font-family: "Courier New", monospace;
+}
+
+.screen {
+  display: none;
+  height: 100vh;
+  padding: 30px;
+}
+
+.screen.active {
+  display: block;
+}
+
+.boot-text {
+  color: #7df9ff;
+  font-size: 14px;
+}
+
+.blink {
+  animation: blink 1s infinite;
+  margin-top: 20px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+h1 {
+  color: #ff4f4f;
+}
+
+.subtle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 300px;
+  background: black;
+  color: #7df9ff;
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+button {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid #ff4f4f;
+  color: #ff4f4f;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4f4f;
+  color: black;
+}
+
+.error {
+  color: #ff4f4f;
+  margin-top: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+
+.email {
+  padding: 10px;
+  border: 1px solid #222;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.email:hover {
+  background: #111;
+}
+
+.email-content {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #444;
+  min-height: 120px;
+}

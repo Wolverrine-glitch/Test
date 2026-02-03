@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OBLIVION FOUNDATION // SECURE NODE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="boot-screen" class="screen active">
+  <pre class="boot-text">
+OBLIVION FOUNDATION BIOS v3.11
+--------------------------------
+NODE STATUS: DEGRADED
+LAST ACCESS: 7,421 DAYS AGO
+
+WARNING:
+• NEURAL CONTAMINATION RISK
+• ATMOSPHERIC TRACE DETECTED
+• CALYX PARTICLES PRESENT
+
+INITIALIZING RECOVERY MODE...
+  </pre>
+  <p class="blink">PRESS ANY KEY TO CONTINUE</p>
+</div>
+
+<div id="login-screen" class="screen">
+  <h1>SECURE TERMINAL ACCESS</h1>
+  <p class="subtle">OBLIVION FOUNDATION – RESEARCH NODE</p>
+
+  <label>USERNAME</label>
+  <input type="text" value="M.CALDER" disabled>
+
+  <label>PASSPHRASE</label>
+  <input type="password" id="password" placeholder="ENTER PASSPHRASE">
+
+  <button onclick="login()">LOGIN</button>
+
+  <p id="login-error" class="error"></p>
+</div>
+
+<div id="desktop" class="screen">
+  <header>
+    <span>USER: M. CALDER</span>
+    <span>NODE: EIDOLON-07</span>
+  </header>
+
+  <main>
+    <h2>INBOX (3)</h2>
+
+    <div class="email" onclick="openEmail(1)">
+      <strong>RE: CALYX STABILITY</strong>
+      <span>BioTechnica Internal</span>
+    </div>
+
+    <div class="email" onclick="openEmail(2)">
+      <strong>Atmospheric Test Results</strong>
+      <span>Oblivion Oversight</span>
+    </div>
+
+    <div class="email" onclick="openEmail(3)">
+      <strong>Final Notice</strong>
+      <span>— REDACTED —</span>
+    </div>
+
+    <div id="email-content" class="email-content"></div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
