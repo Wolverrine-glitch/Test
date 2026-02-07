@@ -46,7 +46,7 @@ Subject exhibited post-mortem neural activity after exposure to V-STRAND.
 
 Black Division has designated the asset:
 
-“NEMESIS PROTOCOL”
+“CHIMERA-01”
 
 Asset placed in cryo-hold as contingency weapon.
 Further testing pending executive approval.`
@@ -54,3 +54,4 @@ Further testing pending executive approval.`
 
   document.getElementById("mailContent").innerText = content[id];
 }
+
