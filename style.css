@@ -1,0 +1,61 @@
+body {
+  background: black;
+  color: #00ff9c;
+  font-family: monospace;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.boot-text {
+  white-space: pre;
+  margin-bottom: 20px;
+}
+
+.login-box {
+  border: 1px solid #00ff9c;
+  padding: 20px;
+  width: 300px;
+}
+
+input {
+  width: 100%;
+  background: black;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+  margin-bottom: 10px;
+}
+
+button {
+  background: black;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+  padding: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #555;
+  border-color: #555;
+}
+
+.menu button {
+  margin-right: 10px;
+}
+
+.email {
+  border: 1px solid #00ff9c;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.email.warning {
+  border-color: red;
+  color: red;
+}
+
+#error {
+  color: red;
+}
