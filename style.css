@@ -1,0 +1,63 @@
+body {
+    background-color: #050608;
+    color: #00ff9c;
+    font-family: monospace;
+    padding: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2, h3 {
+    color: #00eaff;
+}
+
+.warning {
+    color: #ff3355;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    border: 1px solid #00eaff;
+    padding: 20px;
+    width: 320px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    background: black;
+    color: #00eaff;
+    border: 1px solid #00eaff;
+    padding: 5px;
+}
+
+button {
+    margin-top: 15px;
+    background: black;
+    color: #00eaff;
+    border: 1px solid #00eaff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00eaff;
+    color: black;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.email {
+    border: 1px solid #00eaff;
+    padding: 10px;
+    margin-top: 10px;
+}
