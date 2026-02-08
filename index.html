@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oblivion Foundation Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+    <h1>OBLIVION FOUNDATION</h1>
+    <p class="warning">UNAUTHORIZED ACCESS PROHIBITED</p>
+
+    <div class="login-box">
+        <label>USER</label>
+        <input type="text" value="W.BIRKIN" disabled>
+
+        <label>PASSKEY</label>
+        <input type="password" id="passwordInput">
+
+        <button onclick="checkPassword()">LOGIN</button>
+        <p id="error" class="error"></p>
+    </div>
+</div>
+
+<div id="terminal" class="hidden">
+    <h2>WELCOME, DR. W. BIRKIN</h2>
+    <p class="warning">CLEARANCE LEVEL: INTERNAL</p>
+
+    <div class="menu">
+        <button onclick="showEmails()">EMAIL ARCHIVE</button>
+    </div>
+
+    <div id="emails" class="hidden">
+        <h3>EMAILS</h3>
+
+        <div class="email">
+            <strong>From:</strong> Internal Oversight<br>
+            <strong>Subject:</strong> Scope Confirmation — Project Alignment
+            <p>
+                Project alignment with atmospheric delivery systems approved.  
+                SKYE access remains restricted.  
+                Further inquiries are discouraged.
+            </p>
+        </div>
+
+        <div class="email">
+            <strong>From:</strong> W. Birkin (Draft)<br>
+            <strong>Subject:</strong> Degradation Observed
+            <p>
+                Neural decay is inconsistent.  
+                Subjects exhibit post-mortem reflexive behavior when cyberware remains active.  
+                This was not anticipated.
+            </p>
+        </div>
+
+        <div class="email">
+            <strong>From:</strong> Recovery Division<br>
+            <strong>Subject:</strong> Asset Retrieval — Saka Tower
+            <p>
+                One recovered body.  
+                Severe augmentation.  
+                Designation pending.  
+                Viral exposure authorized as contingency measure.
+            </p>
+        </div>
+
+        <div class="email">
+            <strong>From:</strong> Field Liaison<br>
+            <strong>Subject:</strong> Personnel Note
+            <p>
+                Voss remains embedded.  
+                Cover identity intact.  
+                NCPD affiliation continues to provide access.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
